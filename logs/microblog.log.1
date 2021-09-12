@@ -1,0 +1,133 @@
+2021-09-05 21:57:15,303 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-05 21:57:20,639 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-05 21:57:48,443 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-05 21:57:54,833 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 21:17:45,868 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 21:43:59,675 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 22:12:19,462 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 22:35:19,671 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 22:35:25,804 ERROR: Exception on /index [GET] [in e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\routes.py", line 39, in index
+    posts=posts)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\templating.py", line 150, in render_template
+    ctx.app,
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "e:\virtualenvs\flask_blog\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\templates\base.html", line 33, in top-level template code
+    {% block content %}}
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\templates\index.html", line 18, in block 'content'
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2021-09-07 22:35:31,086 ERROR: Exception on /explore [GET] [in e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\routes.py", line 47, in explore
+    return render_template('index.html', title='Explore', posts=posts)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\templating.py", line 150, in render_template
+    ctx.app,
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "e:\virtualenvs\flask_blog\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\templates\base.html", line 33, in top-level template code
+    {% block content %}}
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\templates\index.html", line 18, in block 'content'
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2021-09-07 22:35:32,798 ERROR: Exception on /index [GET] [in e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\routes.py", line 39, in index
+    posts=posts)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\templating.py", line 150, in render_template
+    ctx.app,
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "e:\virtualenvs\flask_blog\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\templates\base.html", line 33, in top-level template code
+    {% block content %}}
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\templates\index.html", line 18, in block 'content'
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2021-09-07 22:35:34,253 ERROR: Exception on /index [GET] [in e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\routes.py", line 39, in index
+    posts=posts)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\templating.py", line 150, in render_template
+    ctx.app,
+  File "e:\virtualenvs\flask_blog\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "e:\virtualenvs\flask_blog\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "e:\virtualenvs\flask_blog\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\templates\base.html", line 33, in top-level template code
+    {% block content %}}
+  File "E:\工程\python\VirtualTestProject\flask_blog\app\templates\index.html", line 18, in block 'content'
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2021-09-07 22:40:23,011 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 22:43:01,939 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 22:51:43,882 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 23:03:33,485 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 23:05:16,273 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 23:06:03,029 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 23:06:26,048 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 23:07:34,768 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
+2021-09-07 23:08:02,642 INFO: Microblog startup [in E:\工程\python\VirtualTestProject\flask_blog\app\__init__.py:37]
