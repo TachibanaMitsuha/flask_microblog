@@ -21,3 +21,5 @@ class Config:
 	#ADMINS = ['your-email@example.com']
 	ADMINS = ['1051011527@qq.com']
 	POSTS_PER_PAGE = 3
+
+	LANGUAGES = ['en', 'zh']  # 注意：不要填写zh_CN。有坑！

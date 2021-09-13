@@ -3,13 +3,13 @@ from wtforms import StringField, PasswordField, BooleanField, SubmitField, TextA
 from wtforms.validators import DataRequired, EqualTo, Email, ValidationError, Length
 
 from app.models import User
-
+from flask_babel import lazy_gettext as _l
 
 class LoginForm(FlaskForm):
-    username = StringField('username', validators=[DataRequired()])
-    password = PasswordField('Password', validators=[DataRequired()])
-    remember_me = BooleanField('Remember Me')
-    submit = SubmitField('Sign in')
+    username = StringField(_l('username'), validators=[DataRequired()])
+    password = PasswordField(_l('Password'), validators=[DataRequired()])
+    remember_me = BooleanField(_l('Remember Me'))
+    submit = SubmitField(_l('Sign in'))
 
 class RegistrationForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
